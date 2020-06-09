@@ -81,7 +81,7 @@ class IpAddress {
     if (firstIpAddress === null){
         returnData = {"ipv4": null, "ipv6": null};
     } else {
-        returnData = {"ipv4": '"'+ firstIpAddress +'"', "ipv6": '"'+ipv6Address+'"'};
+        returnData = {"ipv4": firstIpAddress , "ipv6": ipv6Address};
     }
     return callback(returnData, callbackError);
   }
